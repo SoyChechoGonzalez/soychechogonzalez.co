@@ -1,0 +1,63 @@
+header {
+  position: fixed;
+  background-color: #252525;
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 11;
+}
+.logo {
+  position: relative;
+  bottom: 1.5rem;
+  color: #fff;
+  font-size: 4rem;
+  text-decoration: none;
+}
+header nav {
+  position: fixed;
+  top: 5rem;
+  background-color: #fff;
+  width: 70%;
+  height: 4.5rem;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  padding: 20px 20px;
+}
+header nav ul li:hover {
+  background-color: #e6ab3a;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+header nav ul li a {
+  color: #000;
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* header nav ul li a:hover {
+  background-color: red;
+  padding-top: 20px;
+  padding-bottom: 20px;
+} */
+.social a {
+  padding: 0 20px;
+}
+.FaInstagram,
+.ImWhatsapp {
+  color: #000;
+  font-size: 2rem;
+}

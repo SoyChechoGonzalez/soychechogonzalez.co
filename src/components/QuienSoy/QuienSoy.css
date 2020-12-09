@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.quien_soy {
+  background: #fff;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.quien {
+  /* background-color: greenyellow; */
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quien h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  color: #078b23;
+}
+.quien h1:before {
+  content: "<";
+  color: #000;
+  font-family: "Dancing Script", cursive;
+  font-size: 10rem;
+  font-weight: bold;
+}
+.quien h1:after {
+  content: ">";
+  color: #000;
+  font-family: "Dancing Script", cursive;
+  font-size: 10rem;
+  font-weight: bold;
+}
+.perfil {
+  /* background-color: hotpink; */
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.perfil p {
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(71, 247, 244);
+  border-radius: 30px;
+  width: 160%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soy {
+  /* background-color: lawngreen; */
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soy::before {
+  content: "<";
+  color: #000;
+  font-family: "Dancing Script", cursive;
+  font-size: 10rem;
+  font-weight: bold;
+}
+.soy:after {
+  content: "/>";
+  color: #000;
+  font-family: "Dancing Script", cursive;
+  font-size: 10rem;
+  font-weight: bold;
+}
+
+.soy h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  color: #078b23;
+}
+.quien_soy h1 strong {
+  color: #000;
+}

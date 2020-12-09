@@ -1,0 +1,47 @@
+.GitHub {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  z-index: 111;
+  bottom: 0;
+  right: 0;
+  border-right: 40px solid #000;
+  border-top: 40px solid transparent;
+  border-left: 40px solid transparent;
+  border-bottom: 40px solid #000;
+}
+.GitHub .AiFillGithub {
+  position: absolute;
+  color: #fff;
+}
+
+.hero {
+  /* background-color: rgb(237, 27, 27); */
+  background-image: url(../../assets/img/hero.jpg);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero h1 {
+  color: #fff;
+  z-index: 1;
+  font-size: 1000%;
+}
+.hero h1:before {
+  content: "<";
+  color: #e6ab3a;
+}
+.hero h1:after {
+  content: "/>";
+  color: #e6ab3a;
+}
