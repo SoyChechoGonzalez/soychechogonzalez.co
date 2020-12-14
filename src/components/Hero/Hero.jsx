@@ -6,12 +6,15 @@ const Hero = () => {
   return (
     <React.Fragment>
       <div className="GitHub">
-        <a href="https://github.com/SoyChechoGonzalez" target="blank">
+        <a href="https://github.com/SoyChechoGonzalez" target="__blank">
           <AiFillGithub size="2rem" className="AiFillGithub" />
         </a>
       </div>
       <div className="Linkedin">
-        <a href="https://www.linkedin.com/in/soychechogonzalez/" target="blank">
+        <a
+          href="https://www.linkedin.com/in/soychechogonzalez/"
+          target="__blank"
+        >
           <AiFillLinkedin size="2rem" className="AiFillLinkedin" />
         </a>
       </div>

@@ -10,6 +10,11 @@
   border-left: 40px solid transparent;
   border-bottom: 40px solid #000;
 }
+.GitHub a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 .GitHub .AiFillGithub {
   position: absolute;
   color: #fff;
@@ -25,6 +30,11 @@
   border-top: 40px solid transparent;
   border-left: 40px solid #0a66c2;
   border-bottom: 40px solid #0a66c2;
+}
+.Linkedin a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 .Linkedin .AiFillLinkedin {
   position: absolute;
