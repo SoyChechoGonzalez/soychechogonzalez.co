@@ -1,8 +1,8 @@
 .GitHub {
   position: fixed;
-  width: 80px;
-  height: 80px;
-  z-index: 111;
+  width: 5rem;
+  height: 5rem;
+  z-index: 1;
   bottom: 0;
   right: 0;
   border-right: 40px solid #000;
@@ -11,6 +11,22 @@
   border-bottom: 40px solid #000;
 }
 .GitHub .AiFillGithub {
+  position: absolute;
+  color: #fff;
+}
+.Linkedin {
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  border-right: 40px solid transparent;
+  border-top: 40px solid transparent;
+  border-left: 40px solid #0a66c2;
+  border-bottom: 40px solid #0a66c2;
+}
+.Linkedin .AiFillLinkedin {
   position: absolute;
   color: #fff;
 }

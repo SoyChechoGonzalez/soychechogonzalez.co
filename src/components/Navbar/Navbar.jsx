@@ -27,12 +27,18 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="social">
-            <a href="https://www.instagram.com/soychechogonzalez/">
-              <FaInstagram size="2.6rem" className="FaInstagram" />
+            <a
+              href="https://www.instagram.com/soychechogonzalez/"
+              target="blank"
+            >
+              <FaInstagram size="2rem" className="FaInstagram" />
             </a>
 
-            <a href="https://wa.me/+573008341223?text=Hola!%20tengo%20interes%20en%20que%20me%20hagas%20una%20página%20web">
-              <ImWhatsapp size="2.6rem" className="ImWhatsapp" />
+            <a
+              href="https://wa.me/+573008341223?text=Hola!%20tengo%20interes%20en%20que%20me%20hagas%20una%20página%20web"
+              target="blank"
+            >
+              <ImWhatsapp size="2rem" className="ImWhatsapp" />
             </a>
           </div>
         </nav>
