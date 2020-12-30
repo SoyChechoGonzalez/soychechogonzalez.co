@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
 import { ImWhatsapp } from "react-icons/im";
 
@@ -8,13 +8,10 @@ const Navbar = () => {
   return (
     <Router>
       <header>
-        <Link to="index.html" className="logo">
-          Sergio González
-        </Link>
         <nav>
           <ul>
             <li>
-              <a href="#inicio">Inicio</a>
+              <a href="#hero">Inicio</a>
             </li>
             <li>
               <a href="#quien_soy">Quién Soy</a>
@@ -26,7 +23,7 @@ const Navbar = () => {
               <a href="#contacto">Contacto</a>
             </li>
           </ul>
-          <div className="social">
+        {/*<div className="social">
             <a
               href="https://www.instagram.com/soychechogonzalez/"
               target="blank"
@@ -40,7 +37,7 @@ const Navbar = () => {
             >
               <ImWhatsapp size="2rem" className="ImWhatsapp" />
             </a>
-          </div>
+          </div>*/}
         </nav>
       </header>
     </Router>

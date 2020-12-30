@@ -1,73 +1,53 @@
-.GitHub {
-  position: fixed;
-  width: 5rem;
-  height: 5rem;
-  z-index: 1;
-  bottom: 0;
-  right: 0;
-  border-right: 40px solid #000;
-  border-top: 40px solid transparent;
-  border-left: 40px solid transparent;
-  border-bottom: 40px solid #000;
-}
-.GitHub a {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.GitHub .AiFillGithub {
-  position: absolute;
-  color: #fff;
-}
-.Linkedin {
-  position: fixed;
-  width: 5rem;
-  height: 5rem;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  border-right: 40px solid transparent;
-  border-top: 40px solid transparent;
-  border-left: 40px solid #0a66c2;
-  border-bottom: 40px solid #0a66c2;
-}
-.Linkedin a {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-.Linkedin .AiFillLinkedin {
-  position: absolute;
-  color: #fff;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .hero {
-  /* background-color: rgb(237, 27, 27); */
-  background-image: url(../../assets/img/hero.jpg);
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  display: flex;
+}
+.description {
+  width: 60vw;
+  height: 100vh;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 5rem;
+}
+.description strong {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+.description h1 {
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #fbbc17;
+}
+.description h1::before {
+  content: "<";
+}
+.description h1::after {
+  content: "/>";
+}
+.description p {
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+}
+.foto {
+  width: 40vw;
+  height: 100vh;
+  /* background-color: blueviolet; */
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
-.hero:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.hero h1 {
-  color: #fff;
-  z-index: 1;
-  font-size: 1000%;
-}
-.hero h1:before {
-  content: "<";
-  color: #e6ab3a;
-}
-.hero h1:after {
-  content: "/>";
-  color: #e6ab3a;
+.circulo {
+  width: 20rem;
+  height: 20rem;
+  background-color: #fbbc17;
+  border-radius: 100rem;
+  background-image: url(../../assets/img/perfil.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
