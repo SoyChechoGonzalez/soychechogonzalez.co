@@ -1,5 +1,7 @@
 import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
+import "./reset.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import QuienSoy from "./components/QuienSoy";
@@ -8,13 +10,13 @@ import Contacto from "./components/Contacto";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Navbar />
       <Hero />
       <QuienSoy />
       <Servicios />
       <Contacto />
-    </div>
+    </Router>
   );
 }
 

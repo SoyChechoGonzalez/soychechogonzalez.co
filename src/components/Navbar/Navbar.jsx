@@ -1,46 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+//
+// External Files
+import { Sidebar } from "./Sidebar.jsx";
 import "./Navbar.css";
-import { BrowserRouter as Router } from "react-router-dom";
-import { FaInstagram } from "react-icons/fa";
-import { ImWhatsapp } from "react-icons/im";
+//
+// Icons
+//
+import { FaBars } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
+import { IconContext } from "react-icons";
+//import { ImWhatsapp } from "react-icons/im";
 
 const Navbar = () => {
-  return (
-    <Router>
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <a href="#hero">Inicio</a>
-            </li>
-            <li>
-              <a href="#quien_soy">Quién Soy</a>
-            </li>
-            <li>
-              <a href="#servicios">Servicios</a>
-            </li>
-            <li>
-              <a href="#contacto">Contacto</a>
-            </li>
-          </ul>
-        {/*<div className="social">
-            <a
-              href="https://www.instagram.com/soychechogonzalez/"
-              target="blank"
-            >
-              <FaInstagram size="2rem" className="FaInstagram" />
-            </a>
+  const [sidebar, setSidebar] = useState(false);
 
-            <a
-              href="https://wa.me/+573008341223?text=Hola!%20tengo%20interes%20en%20que%20me%20hagas%20una%20página%20web"
-              target="blank"
-            >
-              <ImWhatsapp size="2rem" className="ImWhatsapp" />
-            </a>
-          </div>*/}
+  const showSidebar = () => setSidebar(!sidebar);
+  return (
+    <>
+      <IconContext.Provider value={{ color: "#fff" }}>
+        <div className="navbar">
+          <Link to="/">
+            <FaBars onClick={showSidebar} className="menu-bars" />
+          </Link>
+        </div>
+        <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+          <ul className="nav-menu-items" onClick={showSidebar}>
+            <li className="navbar-toggle">
+              <Link to="/">
+                <AiOutlineClose className="menu-bars" />
+              </Link>
+            </li>
+            <div>
+              {Sidebar.map((item, index) => {
+                return (
+                  <li key={index} className={item.cName}>
+                    <Link to={item.path}>
+                      {item.icon}
+                      <span>{item.title}</span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </div>
+          </ul>
         </nav>
-      </header>
-    </Router>
+      </IconContext.Provider>
+    </>
   );
 };
 
