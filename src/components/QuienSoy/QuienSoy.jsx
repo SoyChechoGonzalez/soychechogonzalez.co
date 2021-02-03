@@ -6,7 +6,7 @@ const QuienSoy = () => {
     <React.Fragment>
       <section className="quien_soy" id="quien_soy">
         <article className="quien">
-          <h1>Quien</h1>
+          <h1>Quién</h1>
         </article>
         <article className="perfil">
           <p>
